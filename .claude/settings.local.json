@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(unzip *)",
+      "Bash(mkdir -p \"C:/Users/uriga/OneDrive/Escritorio/AGENCIA_RECORDS/MIS_PROYECTOS/PlastIndustrial/frontend/src/app/components\")",
+      "Bash(mkdir -p \"C:/Users/uriga/OneDrive/Escritorio/AGENCIA_RECORDS/MIS_PROYECTOS/PlastIndustrial/frontend/public\")",
+      "Bash(mkdir -p \"C:/Users/uriga/OneDrive/Escritorio/AGENCIA_RECORDS/MIS_PROYECTOS/PlastIndustrial/backend/src/routes\")",
+      "Bash(cp \"C:/Users/uriga/OneDrive/Escritorio/AGENCIA_RECORDS/MIS_PROYECTOS/PlastIndustrial/extracted_tmp/plastindustrial-logos/plastindustrial.svg\" \"C:/Users/uriga/OneDrive/Escritorio/AGENCIA_RECORDS/MIS_PROYECTOS/PlastIndustrial/frontend/public/plastindustrial.svg\")",
+      "Bash(cp \"C:/Users/uriga/OneDrive/Escritorio/AGENCIA_RECORDS/MIS_PROYECTOS/PlastIndustrial/extracted_tmp/plastindustrial-logos/plastindustrial-neg.png\" \"C:/Users/uriga/OneDrive/Escritorio/AGENCIA_RECORDS/MIS_PROYECTOS/PlastIndustrial/frontend/public/plastindustrial-neg.png\")",
+      "WebFetch(domain:www.moldiplast.com)",
+      "WebFetch(domain:splastic.es)"
+    ]
+  }
+}
