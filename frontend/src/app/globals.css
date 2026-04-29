@@ -21,6 +21,42 @@
   }
 }
 
+@layer components {
+  .prose-legal section {
+    @apply mb-10;
+  }
+  .prose-legal h2 {
+    @apply text-lg font-bold text-brand-900 mb-4 tracking-tight;
+  }
+  .prose-legal p {
+    @apply text-gray-500 leading-relaxed mb-4 text-sm;
+  }
+  .prose-legal ul {
+    @apply list-disc pl-5 mb-4 space-y-2;
+  }
+  .prose-legal ul li {
+    @apply text-gray-500 text-sm leading-relaxed;
+  }
+  .prose-legal a {
+    @apply text-brand-700 underline underline-offset-2 hover:text-brand-900 transition-colors;
+  }
+  .prose-legal code {
+    @apply text-xs bg-gray-100 px-1.5 py-0.5 font-mono text-brand-800;
+  }
+  .prose-legal table {
+    @apply w-full text-sm mb-6 border-collapse;
+  }
+  .prose-legal table th {
+    @apply text-left text-[11px] font-semibold tracking-[0.1em] uppercase text-brand-700 border-b border-gray-200 pb-2 pr-6;
+  }
+  .prose-legal table td {
+    @apply py-2.5 pr-6 text-gray-500 border-b border-gray-100 align-top;
+  }
+  .prose-legal table td:first-child {
+    @apply text-[11px] font-semibold tracking-wider uppercase text-gray-400 whitespace-nowrap;
+  }
+}
+
 @layer utilities {
   .section-container {
     @apply max-w-7xl mx-auto px-6 lg:px-8;
