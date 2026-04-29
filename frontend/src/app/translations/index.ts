@@ -10,12 +10,12 @@ export const translations = {
       menu: "Menú",
     },
     hero: {
-      eyebrow: "PlastIndustrial Group",
+      eyebrow: "Plastic injection moulding",
       line1: "Ingeniería",
       line2: "del material",
       line3: "a escala.",
       description:
-        "Holding industrial especializado en la fabricación y distribución de soluciones plásticas técnicas para los sectores más exigentes de la economía europea.",
+        "Holding industrial especializado en la inyección y distribución de soluciones plásticas técnicas para los sectores más exigentes de la economía europea.",
       ctaPrimary: "Ver empresas del grupo",
       ctaSecondary: "Quiénes somos",
       stats: [
@@ -142,7 +142,7 @@ export const translations = {
       menu: "Menu",
     },
     hero: {
-      eyebrow: "PlastIndustrial Group",
+      eyebrow: "Plastic injection moulding",
       line1: "Engineering",
       line2: "material",
       line3: "at scale.",
