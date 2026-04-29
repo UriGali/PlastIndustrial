@@ -44,7 +44,7 @@ export default function Hero() {
           <div className="lg:col-span-7">
             <div className="flex items-center gap-3 mb-10">
               <div className="w-8 h-px bg-white/30" />
-              <span className="text-[11px] font-semibold tracking-[0.2em] uppercase text-white/40">
+              <span className="text-[15px] font-semibold tracking-[0.2em] uppercase text-white/40">
                 {h.eyebrow}
               </span>
             </div>

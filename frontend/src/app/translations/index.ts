@@ -19,7 +19,7 @@ export const translations = {
       ctaPrimary: "Ver empresas del grupo",
       ctaSecondary: "Quiénes somos",
       stats: [
-        { n: "+25", u: "años de actividad" },
+        { n: "+50", u: "años de actividad" },
         { n: "+500", u: "clientes industriales" },
         { n: "2", u: "empresas del grupo" },
       ],
@@ -83,7 +83,7 @@ export const translations = {
     stats: {
       eyebrow: "Cifras del Grupo",
       metrics: [
-        { value: "+25", unit: "años", label: "de actividad ininterrumpida en el sector industrial europeo" },
+        { value: "+50", unit: "años", label: "de actividad ininterrumpida en el sector industrial europeo" },
         { value: "500+", unit: "clientes", label: "empresas industriales confían en nuestras soluciones cada año" },
         { value: "12M€", unit: "facturación", label: "de cifra de negocio consolidada a nivel de grupo" },
         { value: "98%", unit: "retención", label: "de clientes repiten y amplían su relación con el grupo" },
@@ -107,8 +107,8 @@ export const translations = {
       description:
         "Para consultas comerciales, colaboraciones o cualquier información sobre el grupo y sus empresas.",
       channels: [
-        { label: "Email" },
-        { label: "Teléfono" },
+        { label: "Email", cta: "Escribir" },
+        { label: "Teléfono", cta: "Llamar" },
       ],
     },
     footer: {
@@ -151,7 +151,7 @@ export const translations = {
       ctaPrimary: "View group companies",
       ctaSecondary: "Who we are",
       stats: [
-        { n: "+25", u: "years of activity" },
+        { n: "+50", u: "years of activity" },
         { n: "+500", u: "industrial clients" },
         { n: "2", u: "group companies" },
       ],
@@ -215,7 +215,7 @@ export const translations = {
     stats: {
       eyebrow: "Group Figures",
       metrics: [
-        { value: "+25", unit: "years", label: "of uninterrupted activity in the European industrial sector" },
+        { value: "+50", unit: "years", label: "of uninterrupted activity in the European industrial sector" },
         { value: "500+", unit: "clients", label: "industrial companies trust our solutions each year" },
         { value: "12M€", unit: "revenue", label: "consolidated group turnover" },
         { value: "98%", unit: "retention", label: "of clients repeat and expand their relationship with the group" },
@@ -239,8 +239,8 @@ export const translations = {
       description:
         "For commercial enquiries, collaborations or any information about the group and its companies.",
       channels: [
-        { label: "Email" },
-        { label: "Phone" },
+        { label: "Email", cta: "Write" },
+        { label: "Phone", cta: "Call" },
       ],
     },
     footer: {
