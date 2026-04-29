@@ -3,15 +3,11 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useState, useEffect } from "react";
-
-const NAV_LINKS = [
-  { label: "El Grupo", href: "#el-grupo" },
-  { label: "Cifras", href: "#cifras" },
-  { label: "Empresas", href: "#empresas" },
-  { label: "Contacto", href: "#contacto" },
-];
+import { useLanguage } from "../contexts/LanguageContext";
+import type { Lang } from "../translations";
 
 export default function Header() {
+  const { lang, setLang, t } = useLanguage();
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -20,6 +16,15 @@ export default function Header() {
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
+
+  const NAV_LINKS = [
+    { label: t.nav.group, href: "#el-grupo" },
+    { label: t.nav.figures, href: "#cifras" },
+    { label: t.nav.companies, href: "#empresas" },
+    { label: t.nav.contact, href: "#contacto" },
+  ];
+
+  const otherLang: Lang = lang === "es" ? "en" : "es";
 
   return (
     <header
@@ -59,32 +64,60 @@ export default function Header() {
               {link.label}
             </Link>
           ))}
+
+          {/* Language switcher */}
+          <button
+            onClick={() => setLang(otherLang)}
+            className={`flex items-center gap-1.5 text-[11px] font-semibold tracking-[0.12em] uppercase border px-3 py-1.5 transition-all duration-200 ${
+              scrolled
+                ? "border-brand-700/30 text-brand-700 hover:bg-brand-700 hover:text-white hover:border-brand-700"
+                : "border-white/25 text-white/50 hover:text-white hover:border-white/60"
+            }`}
+            aria-label={`Switch to ${otherLang === "en" ? "English" : "Español"}`}
+          >
+            {otherLang.toUpperCase()}
+          </button>
         </nav>
 
-        {/* Mobile */}
-        <button
-          className={`md:hidden p-2 transition-colors ${
-            scrolled ? "text-brand-800" : "text-white"
-          }`}
-          onClick={() => setMenuOpen(!menuOpen)}
-          aria-label="Menú"
-        >
-          <span
-            className={`block w-6 h-px bg-current transition-all duration-300 mb-2 ${
-              menuOpen ? "rotate-45 translate-y-[9px]" : ""
+        {/* Mobile right side */}
+        <div className="flex md:hidden items-center gap-3">
+          {/* Mobile language switcher */}
+          <button
+            onClick={() => setLang(otherLang)}
+            className={`text-[11px] font-semibold tracking-[0.12em] uppercase border px-2.5 py-1 transition-all duration-200 ${
+              scrolled
+                ? "border-brand-700/30 text-brand-700"
+                : "border-white/25 text-white/50"
             }`}
-          />
-          <span
-            className={`block w-6 h-px bg-current transition-all duration-300 mb-2 ${
-              menuOpen ? "opacity-0" : ""
+          >
+            {otherLang.toUpperCase()}
+          </button>
+
+          {/* Hamburger */}
+          <button
+            className={`p-2 transition-colors ${
+              scrolled ? "text-brand-800" : "text-white"
             }`}
-          />
-          <span
-            className={`block w-6 h-px bg-current transition-all duration-300 ${
-              menuOpen ? "-rotate-45 -translate-y-[9px]" : ""
-            }`}
-          />
-        </button>
+            onClick={() => setMenuOpen(!menuOpen)}
+            aria-label={t.nav.menu}
+          >
+            <span
+              className={`block w-6 h-px bg-current transition-all duration-300 mb-2 ${
+                menuOpen ? "rotate-45 translate-y-[9px]" : ""
+              }`}
+            />
+            <span
+              className={`block w-6 h-px bg-current transition-all duration-300 mb-2 ${
+                menuOpen ? "opacity-0" : ""
+              }`}
+            />
+            <span
+              className={`block w-6 h-px bg-current transition-all duration-300 ${
+                menuOpen ? "-rotate-45 -translate-y-[9px]" : ""
+              }`}
+            />
+          </button>
+        </div>
       </div>
 
       {/* Mobile menu */}

@@ -1,27 +1,11 @@
-const METRICS = [
-  {
-    value: "+25",
-    unit: "años",
-    label: "de actividad ininterrumpida en el sector industrial europeo",
-  },
-  {
-    value: "500+",
-    unit: "clientes",
-    label: "empresas industriales confían en nuestras soluciones cada año",
-  },
-  {
-    value: "12M€",
-    unit: "facturación",
-    label: "de cifra de negocio consolidada a nivel de grupo",
-  },
-  {
-    value: "98%",
-    unit: "retención",
-    label: "de clientes repiten y amplían su relación con el grupo",
-  },
-];
+"use client";
+
+import { useLanguage } from "../contexts/LanguageContext";
 
 export default function Stats() {
+  const { t } = useLanguage();
+  const s = t.stats;
+
   return (
     <section id="cifras" className="bg-brand-900 py-28 lg:py-36 overflow-hidden relative">
       <div className="absolute inset-0 pointer-events-none">
@@ -41,12 +25,12 @@ export default function Stats() {
         <div className="flex items-center gap-3 mb-20">
           <div className="w-8 h-px bg-white/30" />
           <span className="text-[11px] font-semibold tracking-[0.2em] uppercase text-white/30">
-            Cifras del Grupo
+            {s.eyebrow}
           </span>
         </div>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-0 divide-y sm:divide-y-0 sm:divide-x divide-white/10">
-          {METRICS.map((m) => (
+          {s.metrics.map((m) => (
             <div key={m.value} className="px-0 sm:px-10 first:pl-0 last:pr-0 py-10 sm:py-0">
               <div className="flex items-baseline gap-2 mb-3">
                 <span className="text-[3.5rem] lg:text-[4.5rem] font-bold text-white leading-none tracking-tight">

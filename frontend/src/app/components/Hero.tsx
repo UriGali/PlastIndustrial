@@ -1,6 +1,12 @@
+"use client";
+
 import Link from "next/link";
+import { useLanguage } from "../contexts/LanguageContext";
 
 export default function Hero() {
+  const { t } = useLanguage();
+  const h = t.hero;
+
   return (
     <section className="relative min-h-screen flex items-end bg-brand-900 overflow-hidden">
       {/* Background gradient layers */}
@@ -39,22 +45,20 @@ export default function Hero() {
             <div className="flex items-center gap-3 mb-10">
               <div className="w-8 h-px bg-white/30" />
               <span className="text-[11px] font-semibold tracking-[0.2em] uppercase text-white/40">
-                PlastIndustrial Group
+                {h.eyebrow}
               </span>
             </div>
 
             <h1 className="font-bold text-white leading-[0.95] tracking-tight">
-              <span className="block text-[clamp(3rem,8vw,7rem)]">Ingeniería</span>
+              <span className="block text-[clamp(3rem,8vw,7rem)]">{h.line1}</span>
               <span className="block text-[clamp(3rem,8vw,7rem)] text-white/20 pl-[0.15em]">
-                de material
+                {h.line2}
               </span>
-              <span className="block text-[clamp(3rem,8vw,7rem)]">a escala.</span>
+              <span className="block text-[clamp(3rem,8vw,7rem)]">{h.line3}</span>
             </h1>
 
             <p className="mt-10 text-base lg:text-lg text-white/45 leading-relaxed max-w-lg font-light">
-              Holding industrial especializado en la fabricación y distribución
-              de soluciones plásticas técnicas para los sectores más exigentes
-              de la economía europea.
+              {h.description}
             </p>
 
             <div className="mt-12 flex items-center gap-8">
@@ -62,7 +66,7 @@ export default function Hero() {
                 href="#empresas"
                 className="group inline-flex items-center gap-3 text-[13px] font-semibold tracking-[0.08em] uppercase text-white border-b border-white/30 pb-1 hover:border-white transition-colors duration-300"
               >
-                Ver empresas del grupo
+                {h.ctaPrimary}
                 <svg
                   className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1"
                   fill="none"
@@ -76,20 +80,16 @@ export default function Hero() {
                 href="#el-grupo"
                 className="text-[13px] font-medium tracking-[0.06em] uppercase text-white/30 hover:text-white/60 transition-colors duration-300"
               >
-                Quiénes somos
+                {h.ctaSecondary}
               </Link>
             </div>
           </div>
 
           {/* Right: vertical stat strip */}
           <div className="lg:col-span-5 lg:pl-16 mt-16 lg:mt-0 flex lg:flex-col lg:items-end gap-8 lg:gap-0">
-            {[
-              { n: "+25", u: "años de actividad" },
-              { n: "+500", u: "clientes industriales" },
-              { n: "2", u: "empresas del grupo" },
-            ].map((s, i) => (
+            {h.stats.map((s, i) => (
               <div
-                key={s.u}
+                key={i}
                 className={`flex flex-col ${
                   i > 0 ? "lg:mt-10 lg:pt-10 lg:border-t lg:border-white/10" : ""
                 }`}

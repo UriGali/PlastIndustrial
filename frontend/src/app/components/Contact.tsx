@@ -1,6 +1,9 @@
-const CHANNELS = [
+"use client";
+
+import { useLanguage } from "../contexts/LanguageContext";
+
+const CHANNEL_META = [
   {
-    label: "Email",
     value: "oriolgali@galireyesbe.com",
     href: "mailto:oriolgali@galireyesbe.com",
     icon: (
@@ -10,7 +13,6 @@ const CHANNELS = [
     ),
   },
   {
-    label: "Teléfono",
     value: "609 73 21 50",
     href: "tel:+34609732150",
     icon: (
@@ -22,6 +24,9 @@ const CHANNELS = [
 ];
 
 export default function Contact() {
+  const { t } = useLanguage();
+  const ct = t.contact;
+
   return (
     <section id="contacto" className="py-24 lg:py-32 bg-gray-50">
       <div className="section-container">
@@ -32,24 +37,23 @@ export default function Contact() {
             <div className="flex items-center gap-3 mb-6">
               <div className="w-8 h-px bg-brand-700" />
               <span className="text-[11px] font-semibold tracking-[0.2em] uppercase text-brand-700">
-                Contacto
+                {ct.eyebrow}
               </span>
             </div>
             <h2 className="text-4xl lg:text-5xl font-bold text-brand-900 leading-[0.95] tracking-tight">
-              ¿Hablamos?
+              {ct.headline}
             </h2>
             <p className="mt-6 text-lg text-gray-400 font-light leading-relaxed">
-              Para consultas comerciales, colaboraciones o cualquier
-              información sobre el grupo y sus empresas.
+              {ct.description}
             </p>
           </div>
 
           {/* Right — contact channels */}
           <div className="lg:col-span-7">
             <div className="flex flex-col divide-y divide-gray-200">
-              {CHANNELS.map((ch) => (
+              {CHANNEL_META.map((ch, i) => (
                 <a
-                  key={ch.label}
+                  key={i}
                   href={ch.href}
                   className="group flex items-center justify-between py-8 transition-all duration-300 hover:pl-2"
                 >
@@ -59,7 +63,7 @@ export default function Contact() {
                     </div>
                     <div>
                       <p className="text-[11px] font-semibold tracking-[0.15em] uppercase text-gray-300 mb-1">
-                        {ch.label}
+                        {ct.channels[i].label}
                       </p>
                       <p className="text-xl font-medium text-brand-900 group-hover:text-brand-700 transition-colors duration-300">
                         {ch.value}
