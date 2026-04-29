@@ -12,7 +12,7 @@ export const translations = {
     hero: {
       eyebrow: "PlastIndustrial Group",
       line1: "Ingeniería",
-      line2: "de material",
+      line2: "del material",
       line3: "a escala.",
       description:
         "Holding industrial especializado en la fabricación y distribución de soluciones plásticas técnicas para los sectores más exigentes de la economía europea.",
