@@ -10,6 +10,11 @@ export const metadata: Metadata = {
     "Conoce PlastIndustrial Group: holding industrial con más de 50 años de experiencia en inyección de plásticos y fabricación de moldes en Barcelona.",
   alternates: {
     canonical: "https://plastindustrial.com/el-grupo",
+    languages: {
+      es: "https://plastindustrial.com/el-grupo",
+      en: "https://plastindustrial.com/el-grupo",
+      "x-default": "https://plastindustrial.com/el-grupo",
+    },
   },
   openGraph: {
     title: "El Grupo | PlastIndustrial Group",

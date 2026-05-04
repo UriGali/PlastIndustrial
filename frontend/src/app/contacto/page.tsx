@@ -6,9 +6,14 @@ import Footer from "../components/Footer";
 export const metadata: Metadata = {
   title: "Contacto | PlastIndustrial Group",
   description:
-    "Contacta con PlastIndustrial Group para proyectos de inyección de plásticos y fabricación de moldes. Ubicados en Sant Quirze del Vallès, Barcelona. Tel: +34 609 73 21 50.",
+    "Contacta con el equipo de PlastIndustrial Group para proyectos de inyección de plásticos y fabricación de moldes en Barcelona. Más de 50 años de experiencia.",
   alternates: {
     canonical: "https://plastindustrial.com/contacto",
+    languages: {
+      es: "https://plastindustrial.com/contacto",
+      en: "https://plastindustrial.com/contacto",
+      "x-default": "https://plastindustrial.com/contacto",
+    },
   },
   openGraph: {
     title: "Contacto | PlastIndustrial Group",
@@ -85,6 +90,7 @@ export default function ContactoPage() {
       />
       <Header />
       <main className="pt-28">
+        <h1 className="sr-only">Contacto | PlastIndustrial Group</h1>
         <Contact />
       </main>
       <Footer />

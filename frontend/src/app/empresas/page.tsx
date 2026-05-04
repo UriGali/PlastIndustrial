@@ -6,9 +6,14 @@ import Footer from "../components/Footer";
 export const metadata: Metadata = {
   title: "Empresas del Grupo | PlastIndustrial Group",
   description:
-    "Moldiplast y Splastic: las dos empresas de PlastIndustrial Group, especialistas en inyección de plásticos y soluciones técnicas para la industria europea desde 1969.",
+    "Moldiplast y Splastic: las dos empresas de PlastIndustrial Group, especializadas en inyección de plásticos y soluciones técnicas para la industria europea.",
   alternates: {
     canonical: "https://plastindustrial.com/empresas",
+    languages: {
+      es: "https://plastindustrial.com/empresas",
+      en: "https://plastindustrial.com/empresas",
+      "x-default": "https://plastindustrial.com/empresas",
+    },
   },
   openGraph: {
     title: "Empresas del Grupo | PlastIndustrial Group",

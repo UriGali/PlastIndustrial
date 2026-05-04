@@ -1,8 +1,14 @@
+import type { Metadata } from "next";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 
-export const metadata = {
+export const metadata: Metadata = {
   title: "Política de Cookies | PlastIndustrial Group",
+  description:
+    "Política de Cookies de PlastIndustrial Group, S.L. Información sobre las cookies de plastindustrial.com: finalidad, duración y cómo gestionarlas.",
+  alternates: {
+    canonical: "https://plastindustrial.com/cookies",
+  },
 };
 
 export default function Cookies() {

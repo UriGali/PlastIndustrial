@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   title: "PlastIndustrial Group | Ingeniería del material a escala",
   icons: { icon: "/favicon.svg" },
   description:
-    "PlastIndustrial Group: ingeniería del material plástico a escala. Holding industrial especializado en inyección de plásticos y fabricación de moldes en Barcelona, con más de 50 años de experiencia.",
+    "Holding industrial especializado en inyección de plásticos y fabricación de moldes en Barcelona. PlastIndustrial Group reúne más de 50 años de experiencia.",
   keywords: [
     "plástico industrial",
     "industrial plastic",
@@ -29,6 +29,11 @@ export const metadata: Metadata = {
   ],
   alternates: {
     canonical: "https://plastindustrial.com",
+    languages: {
+      es: "https://plastindustrial.com",
+      en: "https://plastindustrial.com",
+      "x-default": "https://plastindustrial.com",
+    },
   },
   openGraph: {
     title: "PlastIndustrial Group | Ingeniería del material a escala",
@@ -62,22 +67,28 @@ const jsonLd = {
   name: "PlastIndustrial Group",
   url: "https://plastindustrial.com",
   logo: "https://plastindustrial.com/plastindustrial.svg",
+  telephone: "+34-609-73-21-50",
+  email: "oriolgali@plastindustrial.com",
   description:
     "Grupo empresarial de ingeniería del material plástico especializado en inyección y distribución de soluciones plásticas técnicas para los sectores más exigentes de la economía europea.",
   address: {
     "@type": "PostalAddress",
+    streetAddress: "C/ Empordà, 39",
+    postalCode: "08192",
+    addressLocality: "Sant Quirze del Vallès",
+    addressRegion: "Barcelona",
     addressCountry: "ES",
-    addressRegion: "Cataluña",
   },
   subOrganization: [
     {
       "@type": "Organization",
       name: "Moldiplast, S.L.",
-      url: "https://moldiplast.com",
+      url: "https://www.moldiplast.com/",
     },
     {
       "@type": "Organization",
       name: "Splastic, S.L.U.",
+      url: "https://splastic.es/",
     },
   ],
 };

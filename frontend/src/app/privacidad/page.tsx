@@ -1,8 +1,14 @@
+import type { Metadata } from "next";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 
-export const metadata = {
+export const metadata: Metadata = {
   title: "Política de Privacidad | PlastIndustrial Group",
+  description:
+    "Política de Privacidad de PlastIndustrial Group, S.L. Cómo tratamos los datos personales, base jurídica, derechos del interesado y medidas de seguridad.",
+  alternates: {
+    canonical: "https://plastindustrial.com/privacidad",
+  },
 };
 
 export default function Privacidad() {

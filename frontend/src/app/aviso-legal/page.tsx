@@ -1,8 +1,14 @@
+import type { Metadata } from "next";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 
-export const metadata = {
+export const metadata: Metadata = {
   title: "Aviso Legal | PlastIndustrial Group",
+  description:
+    "Aviso Legal de PlastIndustrial Group, S.L. Información legal sobre el titular del sitio web, condiciones de uso, propiedad intelectual y responsabilidad.",
+  alternates: {
+    canonical: "https://plastindustrial.com/aviso-legal",
+  },
 };
 
 export default function AvisoLegal() {
