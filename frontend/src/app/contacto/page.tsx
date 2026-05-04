@@ -90,8 +90,7 @@ export default function ContactoPage() {
       />
       <Header />
       <main className="pt-28">
-        <h1 className="sr-only">¿Hablamos?</h1>
-        <Contact />
+        <Contact isPageHeading />
       </main>
       <Footer />
     </>

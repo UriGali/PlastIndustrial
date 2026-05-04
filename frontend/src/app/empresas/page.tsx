@@ -97,6 +97,7 @@ export default function EmpresasPage() {
       />
       <Header />
       <main className="pt-28">
+        <h1 className="sr-only">Nuestras Empresas: Moldiplast y Splastic</h1>
         <Companies />
       </main>
       <Footer />

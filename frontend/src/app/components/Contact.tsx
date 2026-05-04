@@ -6,6 +6,7 @@ const CHANNEL_META = [
   {
     value: "oriolgali@plastindustrial.com",
     href: "mailto:oriolgali@plastindustrial.com",
+    ariaLabel: "Enviar email a oriolgali@plastindustrial.com",
     icon: (
       <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
@@ -15,6 +16,7 @@ const CHANNEL_META = [
   {
     value: "+34 609 73 21 50",
     href: "tel:+34609732150",
+    ariaLabel: "Llamar al +34 609 73 21 50",
     icon: (
       <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.948V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
@@ -23,9 +25,10 @@ const CHANNEL_META = [
   },
 ];
 
-export default function Contact() {
+export default function Contact({ isPageHeading = false }: { isPageHeading?: boolean }) {
   const { t } = useLanguage();
   const ct = t.contact;
+  const Heading = isPageHeading ? "h1" : "h2";
 
   return (
     <section id="contacto" className="py-24 lg:py-32 bg-white">
@@ -41,9 +44,9 @@ export default function Contact() {
                   {ct.eyebrow}
                 </span>
               </div>
-              <h2 className="text-4xl lg:text-5xl font-bold text-brand-900 leading-[0.95] tracking-tight">
+              <Heading className="text-4xl lg:text-5xl font-bold text-brand-900 leading-[0.95] tracking-tight">
                 {ct.headline}
-              </h2>
+              </Heading>
             </div>
             <div className="lg:col-span-6">
               <p className="text-base text-gray-400 font-light leading-relaxed">
@@ -59,6 +62,7 @@ export default function Contact() {
             <a
               key={i}
               href={ch.href}
+              aria-label={ch.ariaLabel}
               className="group relative flex flex-col justify-between p-8 border border-gray-150 bg-gray-50 hover:bg-white hover:border-brand-700/40 hover:shadow-[0_4px_24px_rgba(35,67,116,0.08)] transition-all duration-300"
             >
               {/* Top accent line */}
