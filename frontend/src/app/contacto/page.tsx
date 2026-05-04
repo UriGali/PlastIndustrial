@@ -90,7 +90,7 @@ export default function ContactoPage() {
       />
       <Header />
       <main className="pt-28">
-        <h1 className="sr-only">Contacto | PlastIndustrial Group</h1>
+        <h1 className="sr-only">¿Hablamos?</h1>
         <Contact />
       </main>
       <Footer />

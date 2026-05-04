@@ -79,6 +79,7 @@ const jsonLd = {
     addressRegion: "Barcelona",
     addressCountry: "ES",
   },
+  sameAs: ["https://www.moldiplast.com", "https://splastic.es"],
   subOrganization: [
     {
       "@type": "Organization",

@@ -42,13 +42,6 @@ export default function Hero() {
         <div className="grid lg:grid-cols-12 gap-0 items-end">
           {/* Left: headline */}
           <div className="lg:col-span-7">
-            <div className="flex items-center gap-3 mb-10">
-              <div className="w-8 h-px bg-white/30" />
-              <span className="text-[15px] font-semibold tracking-[0.2em] uppercase text-white/40">
-                {h.eyebrow}
-              </span>
-            </div>
-
             <h1 className="font-bold text-white leading-[0.95] tracking-tight">
               <span className="block text-[clamp(3rem,8vw,7rem)]">{h.line1}</span>{" "}
               <span className="block text-[clamp(3rem,8vw,7rem)] text-white/20 pl-[0.15em]">

@@ -12,7 +12,7 @@ import Footer from "./components/Footer";
 export const metadata: Metadata = {
   title: "PlastIndustrial Group | Ingeniería del material a escala",
   description:
-    "Holding industrial especializado en inyección de plásticos y fabricación de moldes en Barcelona. PlastIndustrial Group reúne más de 50 años de experiencia.",
+    "PlastIndustrial Group: holding líder en inyección de plástico para automoción, construcción y packaging en Europa. Más de 50 años de experiencia industrial.",
   alternates: {
     canonical: "https://plastindustrial.com",
     languages: {
