@@ -10,8 +10,8 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://plastindustrial.com"),
   title: "PlastIndustrial Group | Ingeniería del material a escala",
-  icons: { icon: "/favicon.svg" },
   description:
     "Holding industrial especializado en inyección de plásticos y fabricación de moldes en Barcelona. PlastIndustrial Group reúne más de 50 años de experiencia.",
   keywords: [
@@ -27,11 +27,16 @@ export const metadata: Metadata = {
     "componentes plásticos",
     "Barcelona",
   ],
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: { index: true, follow: true },
+  },
+  icons: { icon: "/favicon.svg" },
   alternates: {
     canonical: "https://plastindustrial.com",
     languages: {
-      es: "https://plastindustrial.com",
-      en: "https://plastindustrial.com",
+      "es-ES": "https://plastindustrial.com",
       "x-default": "https://plastindustrial.com",
     },
   },
@@ -45,7 +50,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "https://plastindustrial.com/og-image.jpg",
+        url: "/og-image.jpg",
         width: 1200,
         height: 630,
         alt: "PlastIndustrial Group — Ingeniería del material a escala",
@@ -57,7 +62,7 @@ export const metadata: Metadata = {
     title: "PlastIndustrial Group | Ingeniería del material a escala",
     description:
       "Holding industrial especializado en inyección de plásticos y fabricación de moldes en Barcelona.",
-    images: ["https://plastindustrial.com/og-image.jpg"],
+    images: ["/og-image.jpg"],
   },
 };
 

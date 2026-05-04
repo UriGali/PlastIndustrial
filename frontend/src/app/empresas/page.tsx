@@ -10,8 +10,7 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://plastindustrial.com/empresas",
     languages: {
-      es: "https://plastindustrial.com/empresas",
-      en: "https://plastindustrial.com/empresas",
+      "es-ES": "https://plastindustrial.com/empresas",
       "x-default": "https://plastindustrial.com/empresas",
     },
   },
@@ -25,7 +24,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "https://plastindustrial.com/og-image.jpg",
+        url: "/og-image.jpg",
         width: 1200,
         height: 630,
         alt: "Empresas — PlastIndustrial Group",
@@ -37,7 +36,7 @@ export const metadata: Metadata = {
     title: "Nuestras Empresas | PlastIndustrial Group",
     description:
       "Moldiplast y Splastic: especialistas en inyección de plásticos y soluciones técnicas para la industria europea desde 1969.",
-    images: ["https://plastindustrial.com/og-image.jpg"],
+    images: ["/og-image.jpg"],
   },
 };
 

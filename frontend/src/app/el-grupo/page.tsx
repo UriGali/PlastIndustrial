@@ -11,8 +11,7 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://plastindustrial.com/el-grupo",
     languages: {
-      es: "https://plastindustrial.com/el-grupo",
-      en: "https://plastindustrial.com/el-grupo",
+      "es-ES": "https://plastindustrial.com/el-grupo",
       "x-default": "https://plastindustrial.com/el-grupo",
     },
   },
@@ -26,7 +25,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "https://plastindustrial.com/og-image.jpg",
+        url: "/og-image.jpg",
         width: 1200,
         height: 630,
         alt: "El Grupo — PlastIndustrial Group",
@@ -38,7 +37,7 @@ export const metadata: Metadata = {
     title: "El Grupo | PlastIndustrial Group",
     description:
       "Conoce PlastIndustrial Group: holding industrial con más de 50 años de experiencia en inyección de plásticos y fabricación de moldes en Barcelona.",
-    images: ["https://plastindustrial.com/og-image.jpg"],
+    images: ["/og-image.jpg"],
   },
 };
 

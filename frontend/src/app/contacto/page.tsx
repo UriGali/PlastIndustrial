@@ -10,8 +10,7 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://plastindustrial.com/contacto",
     languages: {
-      es: "https://plastindustrial.com/contacto",
-      en: "https://plastindustrial.com/contacto",
+      "es-ES": "https://plastindustrial.com/contacto",
       "x-default": "https://plastindustrial.com/contacto",
     },
   },
@@ -25,7 +24,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "https://plastindustrial.com/og-image.jpg",
+        url: "/og-image.jpg",
         width: 1200,
         height: 630,
         alt: "Contacto — PlastIndustrial Group",
@@ -37,7 +36,7 @@ export const metadata: Metadata = {
     title: "Contacto | PlastIndustrial Group",
     description:
       "Contacta con PlastIndustrial Group para proyectos de inyección de plásticos y fabricación de moldes en Barcelona.",
-    images: ["https://plastindustrial.com/og-image.jpg"],
+    images: ["/og-image.jpg"],
   },
 };
 

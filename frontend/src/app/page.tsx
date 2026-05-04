@@ -16,8 +16,7 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://plastindustrial.com",
     languages: {
-      es: "https://plastindustrial.com",
-      en: "https://plastindustrial.com",
+      "es-ES": "https://plastindustrial.com",
       "x-default": "https://plastindustrial.com",
     },
   },
@@ -31,7 +30,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "https://plastindustrial.com/og-image.jpg",
+        url: "/og-image.jpg",
         width: 1200,
         height: 630,
         alt: "PlastIndustrial Group — Ingeniería del material a escala",
@@ -43,7 +42,7 @@ export const metadata: Metadata = {
     title: "PlastIndustrial Group | Ingeniería del material a escala",
     description:
       "PlastIndustrial Group: holding líder en inyección de plástico para automoción, construcción y packaging en Europa.",
-    images: ["https://plastindustrial.com/og-image.jpg"],
+    images: ["/og-image.jpg"],
   },
 };
 
