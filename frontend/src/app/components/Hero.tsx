@@ -49,7 +49,10 @@ export default function Hero() {
               </span>
             </div>
 
-            <h1 className="font-bold text-white leading-[0.95] tracking-tight">
+            <h1
+              className="font-bold text-white leading-[0.95] tracking-tight"
+              aria-label={`${h.line1} ${h.line2} ${h.line3}`}
+            >
               <span className="block text-[clamp(3rem,8vw,7rem)]">{h.line1}</span>
               <span className="block text-[clamp(3rem,8vw,7rem)] text-white/20 pl-[0.15em]">
                 {h.line2}
