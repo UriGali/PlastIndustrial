@@ -59,10 +59,10 @@ export default function Footer() {
             </h4>
             <ul className="space-y-3">
               {[
-                { label: f.links.whoWeAre, href: "#el-grupo" },
-                { label: f.links.figures, href: "#cifras" },
-                { label: f.links.companies, href: "#empresas" },
-                { label: f.links.contact, href: "#contacto" },
+                { label: f.links.whoWeAre, href: "/el-grupo" },
+                { label: f.links.figures, href: "/#cifras" },
+                { label: f.links.companies, href: "/empresas" },
+                { label: f.links.contact, href: "/contacto" },
               ].map((l) => (
                 <li key={l.href}>
                   <Link

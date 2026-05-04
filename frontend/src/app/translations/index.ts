@@ -85,7 +85,7 @@ export const translations = {
       metrics: [
         { value: "+50", unit: "años", label: "de actividad ininterrumpida en el sector industrial europeo" },
         { value: "500+", unit: "clientes", label: "empresas industriales confían en nuestras soluciones cada año" },
-        { value: "12M€", unit: "facturación", label: "de cifra de negocio consolidada a nivel de grupo" },
+        { value: "6M€", unit: "facturación", label: "de cifra de negocio consolidada a nivel de grupo" },
         { value: "98%", unit: "retención", label: "de clientes repiten y amplían su relación con el grupo" },
       ],
     },
@@ -217,7 +217,7 @@ export const translations = {
       metrics: [
         { value: "+50", unit: "years", label: "of uninterrupted activity in the European industrial sector" },
         { value: "500+", unit: "clients", label: "industrial companies trust our solutions each year" },
-        { value: "12M€", unit: "revenue", label: "consolidated group turnover" },
+        { value: "6M€", unit: "revenue", label: "consolidated group turnover" },
         { value: "98%", unit: "retention", label: "of clients repeat and expand their relationship with the group" },
       ],
     },

@@ -18,10 +18,10 @@ export default function Header() {
   }, []);
 
   const NAV_LINKS = [
-    { label: t.nav.group, href: "#el-grupo" },
-    { label: t.nav.figures, href: "#cifras" },
-    { label: t.nav.companies, href: "#empresas" },
-    { label: t.nav.contact, href: "#contacto" },
+    { label: t.nav.group, href: "/el-grupo" },
+    { label: t.nav.figures, href: "/#cifras" },
+    { label: t.nav.companies, href: "/empresas" },
+    { label: t.nav.contact, href: "/contacto" },
   ];
 
   const otherLang: Lang = lang === "es" ? "en" : "es";
