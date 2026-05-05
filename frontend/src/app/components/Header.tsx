@@ -39,7 +39,7 @@ export default function Header() {
         <Link href="/" className="flex items-center">
           <Image
             src="/plastindustrial.svg"
-            alt="PlastIndustrial Group"
+            alt="Logo PlastIndustrial Group"
             width={220}
             height={59}
             priority

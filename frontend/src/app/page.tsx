@@ -11,9 +11,9 @@ import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 
 export const metadata: Metadata = {
-  title: "PlastIndustrial Group | Ingeniería del material a escala",
+  title: "Ingeniería del Plástico Industrial en Europa | PlastIndustrial Group",
   description:
-    "PlastIndustrial Group: holding líder en inyección de plástico para automoción, construcción y packaging en Europa. Más de 50 años de experiencia industrial.",
+    "Holding líder en inyección de plásticos industriales en Europa. Moldiplast y Splastic: más de 50 años fabricando componentes técnicos en Barcelona.",
   alternates: {
     canonical: "https://plastindustrial.com",
     languages: {
@@ -22,9 +22,9 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "PlastIndustrial Group | Ingeniería del material a escala",
+    title: "Ingeniería del Plástico Industrial en Europa | PlastIndustrial Group",
     description:
-      "PlastIndustrial Group: holding líder en inyección de plástico para automoción, construcción y packaging en Europa. Más de 50 años de experiencia industrial.",
+      "Holding líder en inyección de plásticos industriales en Europa. Moldiplast y Splastic: más de 50 años fabricando componentes técnicos en Barcelona.",
     url: "https://plastindustrial.com",
     siteName: "PlastIndustrial Group",
     locale: "es_ES",
@@ -34,15 +34,15 @@ export const metadata: Metadata = {
         url: "/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "PlastIndustrial Group — Ingeniería del material a escala",
+        alt: "PlastIndustrial Group — Ingeniería del Plástico Industrial en Europa",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "PlastIndustrial Group | Ingeniería del material a escala",
+    title: "Ingeniería del Plástico Industrial en Europa | PlastIndustrial Group",
     description:
-      "PlastIndustrial Group: holding líder en inyección de plástico para automoción, construcción y packaging en Europa.",
+      "Holding líder en inyección de plásticos industriales en Europa. Moldiplast y Splastic: más de 50 años de experiencia técnica en Barcelona.",
     images: ["/og-image.jpg"],
   },
 };

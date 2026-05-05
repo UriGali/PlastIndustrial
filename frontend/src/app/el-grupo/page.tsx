@@ -6,9 +6,9 @@ import GroupText from "../components/GroupText";
 import Footer from "../components/Footer";
 
 export const metadata: Metadata = {
-  title: "El Grupo | PlastIndustrial Group",
+  title: "El Grupo PlastIndustrial | 50 Años de Historia",
   description:
-    "Conoce PlastIndustrial Group: holding industrial con más de 50 años de experiencia en inyección de plásticos y fabricación de moldes en Barcelona.",
+    "PlastIndustrial Group: holding industrial con más de 50 años en inyección de plásticos técnicos. Nuestra historia, misión y visión en Barcelona.",
   alternates: {
     canonical: "https://plastindustrial.com/el-grupo",
     languages: {
@@ -17,9 +17,9 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "El Grupo | PlastIndustrial Group",
+    title: "El Grupo PlastIndustrial | 50 Años de Historia",
     description:
-      "Conoce PlastIndustrial Group: holding industrial con más de 50 años de experiencia en inyección de plásticos y fabricación de moldes en Barcelona.",
+      "PlastIndustrial Group: holding industrial con más de 50 años en inyección de plásticos técnicos. Nuestra historia, misión y visión en Barcelona.",
     url: "https://plastindustrial.com/el-grupo",
     siteName: "PlastIndustrial Group",
     locale: "es_ES",
@@ -29,15 +29,15 @@ export const metadata: Metadata = {
         url: "/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "El Grupo — PlastIndustrial Group",
+        alt: "El Grupo PlastIndustrial — 50 Años de Historia",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "El Grupo | PlastIndustrial Group",
+    title: "El Grupo PlastIndustrial | 50 Años de Historia",
     description:
-      "Conoce PlastIndustrial Group: holding industrial con más de 50 años de experiencia en inyección de plásticos y fabricación de moldes en Barcelona.",
+      "PlastIndustrial Group: holding industrial con más de 50 años en inyección de plásticos técnicos. Nuestra historia, misión y visión en Barcelona.",
     images: ["/og-image.jpg"],
   },
 };
@@ -77,6 +77,7 @@ export default function ElGrupoPage() {
       />
       <Header />
       <main className="pt-28">
+        <h1 className="sr-only">El Grupo PlastIndustrial — 50 Años de Historia Industrial en Inyección de Plásticos</h1>
         <About />
         <GroupInfo />
         <GroupText />

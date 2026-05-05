@@ -18,7 +18,7 @@ export default function Footer() {
           <div className="lg:col-span-5">
             <Image
               src="/plastindustrial-neg.png"
-              alt="PlastIndustrial Group"
+              alt="Logo PlastIndustrial Group"
               width={200}
               height={54}
               className="h-9 w-auto mb-6 opacity-90"

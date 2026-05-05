@@ -110,6 +110,7 @@ export const translations = {
         { label: "Email", cta: "Escribir" },
         { label: "Teléfono", cta: "Llamar" },
       ],
+      officeLabel: "Sede Central",
     },
     footer: {
       description:
@@ -242,6 +243,7 @@ export const translations = {
         { label: "Email", cta: "Write" },
         { label: "Phone", cta: "Call" },
       ],
+      officeLabel: "Headquarters",
     },
     footer: {
       description:

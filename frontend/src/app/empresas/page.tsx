@@ -4,9 +4,9 @@ import Companies from "../components/Companies";
 import Footer from "../components/Footer";
 
 export const metadata: Metadata = {
-  title: "Nuestras Empresas | PlastIndustrial Group",
+  title: "Empresas del Grupo | Moldiplast y Splastic",
   description:
-    "Moldiplast y Splastic: las dos empresas de PlastIndustrial Group, especializadas en inyección de plásticos técnicos y fabricación de moldes para la industria europea.",
+    "Moldiplast y Splastic, empresas del grupo PlastIndustrial: inyección de plásticos técnicos para automoción, packaging y gran consumo desde 1969.",
   alternates: {
     canonical: "https://plastindustrial.com/empresas",
     languages: {
@@ -15,9 +15,9 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Nuestras Empresas | PlastIndustrial Group",
+    title: "Empresas del Grupo | Moldiplast y Splastic",
     description:
-      "Moldiplast y Splastic: las dos empresas de PlastIndustrial Group, especialistas en inyección de plásticos y soluciones técnicas para la industria europea desde 1969.",
+      "Moldiplast y Splastic, empresas del grupo PlastIndustrial: inyección de plásticos técnicos para automoción, packaging y gran consumo desde 1969.",
     url: "https://plastindustrial.com/empresas",
     siteName: "PlastIndustrial Group",
     locale: "es_ES",
@@ -27,15 +27,15 @@ export const metadata: Metadata = {
         url: "/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "Empresas — PlastIndustrial Group",
+        alt: "Empresas del Grupo — Moldiplast y Splastic",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Nuestras Empresas | PlastIndustrial Group",
+    title: "Empresas del Grupo | Moldiplast y Splastic",
     description:
-      "Moldiplast y Splastic: especialistas en inyección de plásticos y soluciones técnicas para la industria europea desde 1969.",
+      "Moldiplast y Splastic, empresas del grupo PlastIndustrial: inyección de plásticos técnicos para automoción, packaging y gran consumo desde 1969.",
     images: ["/og-image.jpg"],
   },
 };
