@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Header from "../components/Header";
 import About from "../components/About";
 import GroupInfo from "../components/GroupInfo";
+import GroupText from "../components/GroupText";
 import Footer from "../components/Footer";
 
 export const metadata: Metadata = {
@@ -78,6 +79,7 @@ export default function ElGrupoPage() {
       <main className="pt-28">
         <About />
         <GroupInfo />
+        <GroupText />
       </main>
       <Footer />
     </>

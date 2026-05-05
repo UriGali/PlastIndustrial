@@ -3,6 +3,7 @@ import Header from "./components/Header";
 import Hero from "./components/Hero";
 import About from "./components/About";
 import GroupInfo from "./components/GroupInfo";
+import HomeText from "./components/HomeText";
 import Companies from "./components/Companies";
 import Stats from "./components/Stats";
 import Team from "./components/Team";
@@ -54,6 +55,7 @@ export default function Home() {
         <Hero />
         <About />
         <GroupInfo />
+        <HomeText />
         <Companies />
         <Stats />
         <Team />

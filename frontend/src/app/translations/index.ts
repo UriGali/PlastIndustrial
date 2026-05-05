@@ -103,7 +103,7 @@ export const translations = {
     },
     contact: {
       eyebrow: "Contacto",
-      headline: "¿Hablamos?",
+      headline: "Contacta con PlastIndustrial Group",
       description:
         "Para consultas comerciales, colaboraciones o cualquier información sobre el grupo y sus empresas.",
       channels: [
@@ -235,7 +235,7 @@ export const translations = {
     },
     contact: {
       eyebrow: "Contact",
-      headline: "Shall we talk?",
+      headline: "Contact PlastIndustrial Group",
       description:
         "For commercial enquiries, collaborations or any information about the group and its companies.",
       channels: [

@@ -25,10 +25,11 @@ const CHANNEL_META = [
   },
 ];
 
+const HEADING_CLASS = "text-4xl lg:text-5xl font-bold text-brand-900 leading-[0.95] tracking-tight";
+
 export default function Contact({ isPageHeading = false }: { isPageHeading?: boolean }) {
   const { t } = useLanguage();
   const ct = t.contact;
-  const Heading = isPageHeading ? "h1" : "h2";
 
   return (
     <section id="contacto" className="py-24 lg:py-32 bg-white">
@@ -44,9 +45,11 @@ export default function Contact({ isPageHeading = false }: { isPageHeading?: boo
                   {ct.eyebrow}
                 </span>
               </div>
-              <Heading className="text-4xl lg:text-5xl font-bold text-brand-900 leading-[0.95] tracking-tight">
-                {ct.headline}
-              </Heading>
+              {isPageHeading ? (
+                <h1 className={HEADING_CLASS}>{ct.headline}</h1>
+              ) : (
+                <h2 className={HEADING_CLASS}>{ct.headline}</h2>
+              )}
             </div>
             <div className="lg:col-span-6">
               <p className="text-base text-gray-400 font-light leading-relaxed">
