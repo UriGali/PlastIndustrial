@@ -10,6 +10,7 @@ export default function Header() {
   const { lang, setLang, t } = useLanguage();
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
+  const [langOpen, setLangOpen] = useState(false);
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 40);
@@ -24,7 +25,12 @@ export default function Header() {
     { label: t.nav.contact, href: "/contacto" },
   ];
 
-  const otherLang: Lang = lang === "es" ? "en" : "es";
+  const ALL_LANGS: { code: Lang; label: string }[] = [
+    { code: "es", label: "ES" },
+    { code: "en", label: "EN" },
+    { code: "ca", label: "CA" },
+  ];
+  const otherLangs = ALL_LANGS.filter((l) => l.code !== lang);
 
   return (
     <header
@@ -66,32 +72,72 @@ export default function Header() {
           ))}
 
           {/* Language switcher */}
-          <button
-            onClick={() => setLang(otherLang)}
-            className={`flex items-center gap-1.5 text-[11px] font-semibold tracking-[0.12em] uppercase border px-3 py-1.5 transition-all duration-200 ${
-              scrolled
-                ? "border-brand-700/30 text-brand-700 hover:bg-brand-700 hover:text-white hover:border-brand-700"
-                : "border-white/25 text-white/50 hover:text-white hover:border-white/60"
-            }`}
-            aria-label={`Switch to ${otherLang === "en" ? "English" : "Español"}`}
+          <div
+            className="relative"
+            onBlur={(e) => {
+              if (!e.currentTarget.contains(e.relatedTarget as Node)) setLangOpen(false);
+            }}
           >
-            {otherLang.toUpperCase()}
-          </button>
+            <button
+              onClick={() => setLangOpen(!langOpen)}
+              className={`flex items-center gap-1.5 text-[11px] font-semibold tracking-[0.12em] uppercase border px-3 py-1.5 transition-all duration-200 ${
+                scrolled
+                  ? "border-brand-700/30 text-brand-700 hover:bg-brand-700 hover:text-white hover:border-brand-700"
+                  : "border-white/25 text-white/50 hover:text-white hover:border-white/60"
+              }`}
+              aria-label="Seleccionar idioma"
+            >
+              {lang.toUpperCase()}
+            </button>
+            {langOpen && (
+              <div className="absolute right-0 top-full mt-1 bg-white border border-gray-100 shadow-md z-10">
+                {otherLangs.map((l) => (
+                  <button
+                    key={l.code}
+                    onClick={() => { setLang(l.code); setLangOpen(false); }}
+                    className="block w-full px-3 py-1.5 text-[11px] font-semibold tracking-[0.12em] uppercase text-brand-700 hover:bg-brand-50 transition-colors"
+                  >
+                    {l.label}
+                  </button>
+                ))}
+              </div>
+            )}
+          </div>
         </nav>
 
         {/* Mobile right side */}
         <div className="flex md:hidden items-center gap-3">
           {/* Mobile language switcher */}
-          <button
-            onClick={() => setLang(otherLang)}
-            className={`text-[11px] font-semibold tracking-[0.12em] uppercase border px-2.5 py-1 transition-all duration-200 ${
-              scrolled
-                ? "border-brand-700/30 text-brand-700"
-                : "border-white/25 text-white/50"
-            }`}
+          <div
+            className="relative"
+            onBlur={(e) => {
+              if (!e.currentTarget.contains(e.relatedTarget as Node)) setLangOpen(false);
+            }}
           >
-            {otherLang.toUpperCase()}
-          </button>
+            <button
+              onClick={() => setLangOpen(!langOpen)}
+              className={`text-[11px] font-semibold tracking-[0.12em] uppercase border px-2.5 py-1 transition-all duration-200 ${
+                scrolled
+                  ? "border-brand-700/30 text-brand-700"
+                  : "border-white/25 text-white/50"
+              }`}
+            >
+              {lang.toUpperCase()}
+            </button>
+            {langOpen && (
+              <div className="absolute right-0 top-full mt-1 bg-white border border-gray-100 shadow-md z-10">
+                {otherLangs.map((l) => (
+                  <button
+                    key={l.code}
+                    onClick={() => { setLang(l.code); setLangOpen(false); }}
+                    className="block w-full px-3 py-1.5 text-[11px] font-semibold tracking-[0.12em] uppercase text-brand-700 hover:bg-brand-50 transition-colors"
+                  >
+                    {l.label}
+                  </button>
+                ))}
+              </div>
+            )}
+          </div>
 
           {/* Hamburger */}
           <button

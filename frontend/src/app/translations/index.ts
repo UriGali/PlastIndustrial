@@ -1,4 +1,4 @@
-export type Lang = "es" | "en";
+export type Lang = "es" | "en" | "ca";
 
 export const translations = {
   es: {
@@ -264,6 +264,139 @@ export const translations = {
       },
       rights: "All rights reserved.",
       builtBy: "Developed by",
+    },
+  },
+
+  ca: {
+    nav: {
+      group: "El Grup",
+      figures: "Xifres",
+      companies: "Empreses",
+      contact: "Contacte",
+      menu: "Menú",
+    },
+    hero: {
+      eyebrow: "Plastic injection moulding",
+      line1: "Enginyeria",
+      line2: "del material",
+      line3: "a escala.",
+      description:
+        "Holding industrial especialitzat en la injecció i distribució de solucions plàstiques tècniques per als sectors més exigents de l'economia europea.",
+      ctaPrimary: "Veure empreses del grup",
+      ctaSecondary: "Qui som",
+      stats: [
+        { n: "+50", u: "anys d'activitat" },
+        { n: "+500", u: "clients industrials" },
+        { n: "2", u: "empreses del grup" },
+      ],
+    },
+    about: {
+      eyebrow: "Sobre el Grup",
+      headline1: "Dècades construint",
+      headline2: "la indústria del demà",
+      p1: "PlastIndustrial Group és un holding empresarial especialitzat en el disseny, fabricació i distribució de solucions plàstiques industrials d'alta precisió.",
+      p2: "Amb presència en múltiples sectors — automoció, construcció, packaging i béns de consum — les nostres empreses filials operen amb autonomia estratègica sota els valors comuns del grup: qualitat, innovació i rigor tècnic.",
+      values: [
+        {
+          title: "Qualitat Certificada",
+          desc: "Processos auditats sota estàndards internacionals ISO per garantir l'excel·lència en cada producte.",
+        },
+        {
+          title: "Innovació Contínua",
+          desc: "Recerca i desenvolupament constant per oferir solucions tècniques avançades al mercat industrial.",
+        },
+        {
+          title: "Compromís Client",
+          desc: "Relacions duradores basades en la confiança, el servei tècnic personalitzat i la resposta àgil.",
+        },
+        {
+          title: "Sostenibilitat",
+          desc: "Materials i processos responsables amb el medi ambient per construir un futur industrial sostenible.",
+        },
+      ],
+    },
+    groupInfo: {
+      eyebrow: "Propòsit del Grup",
+      missionLabel: "Missió",
+      missionText:
+        "Unir experiència i capacitat industrial per oferir solucions d'injecció de plàstics eficients, properes i d'alta qualitat.",
+      visionLabel: "Visió",
+      visionText:
+        "Ser l'aliat clau que impulsa la producció local i fa innecessària la importació en el sector del plàstic.",
+    },
+    companies: {
+      eyebrow: "Les Nostres Empreses",
+      headline1: "Dues empreses.",
+      headline2: "Un estàndard.",
+      description:
+        "Cada filial opera de forma independent amb la seva pròpia estructura comercial i operativa, però comparteix la plataforma de R+D, compres estratègiques i els valors d'excel·lència del grup.",
+      visitWeb: "Visitar web",
+      items: [
+        {
+          tagline: "Injecció de plàstic i fabricació de motlles",
+          description:
+            "Especialitzada en la fabricació de peces tècniques, disposant d'un parc de maquinària amb capacitats d'injecció entre 60 i 320 tones, adequat per a components que requereixen alta precisió i complexitat tècnica.",
+          sectors: ["Automoció", "Electrònica", "Dispositius Mèdics", "Electrodomèstics"],
+        },
+        {
+          tagline: "Injecció d'alta capacitat i motlles a mida",
+          description:
+            "Centrada en la producció de peces de gran format, amb equips que abasten des de 450 fins a 1.400 tones, la qual cosa permet abordar projectes de major volum i exigència estructural.",
+          sectors: ["Automoció", "Cosmètica", "Gran Consum"],
+        },
+      ],
+    },
+    stats: {
+      eyebrow: "Xifres del Grup",
+      metrics: [
+        { value: "+50", unit: "anys", label: "d'activitat ininterrompuda en el sector industrial europeu" },
+        { value: "500+", unit: "clients", label: "empreses industrials confien en les nostres solucions cada any" },
+        { value: "6M€", unit: "facturació", label: "de xifra de negoci consolidada a nivell de grup" },
+        { value: "98%", unit: "retenció", label: "de clients repeteixen i amplien la seva relació amb el grup" },
+      ],
+    },
+    team: {
+      eyebrow: "Equip",
+      headline1: "Tres perfils.",
+      headline2: "Un propòsit.",
+      description:
+        "Aquesta estructura de lideratge ens permet combinar visió estratègica, coneixement tècnic i capacitat industrial, garantint un servei sòlid, àgil i orientat al client.",
+      members: [
+        { desc: "Lidera el grup, coordinant l'estratègia global i el desenvolupament corporatiu." },
+        { desc: "Al capdavant de Moldiplast, impulsant l'especialització en peces tècniques i d'alta precisió." },
+        { desc: "Dirigeix Splastic, centrat en la producció de peces de gran format i alta capacitat productiva." },
+      ],
+    },
+    contact: {
+      eyebrow: "Contacte",
+      headline: "Contacta amb PlastIndustrial Group",
+      description:
+        "Per a consultes comercials, col·laboracions o qualsevol informació sobre el grup i les seves empreses.",
+      channels: [
+        { label: "Email", cta: "Escriure" },
+        { label: "Telèfon", cta: "Trucar" },
+      ],
+      officeLabel: "Seu Central",
+    },
+    footer: {
+      description:
+        "Holding empresarial de referència en solucions plàstiques industrials per als mercats europeus més exigents.",
+      companies: "Empreses",
+      theGroup: "El Grup",
+      links: {
+        whoWeAre: "Qui som",
+        figures: "Xifres",
+        companies: "Empreses",
+        contact: "Contacte",
+      },
+      legal: "Legal",
+      legalLinks: {
+        privacy: "Privacitat",
+        legalNotice: "Avís legal",
+        cookies: "Cookies",
+      },
+      rights: "Tots els drets reservats.",
+      builtBy: "Desenvolupat per",
     },
   },
 } as const;
