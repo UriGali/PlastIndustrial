@@ -4,9 +4,9 @@ import Companies from "../components/Companies";
 import Footer from "../components/Footer";
 
 export const metadata: Metadata = {
-  title: "Empresas del Grupo | Moldiplast y Splastic",
+  title: "Empresas del Grupo | Moldiplast, Splastic y A. Madrona",
   description:
-    "Moldiplast y Splastic, empresas del grupo PlastIndustrial: inyección de plásticos técnicos para automoción, packaging y gran consumo desde 1969.",
+    "Moldiplast, Splastic y A. Madrona, empresas del grupo PlastIndustrial: inyección de plásticos técnicos, gran formato y fabricación en sala blanca.",
   alternates: {
     canonical: "https://plastindustrial.com/empresas",
     languages: {
@@ -15,9 +15,9 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Empresas del Grupo | Moldiplast y Splastic",
+    title: "Empresas del Grupo | Moldiplast, Splastic y A. Madrona",
     description:
-      "Moldiplast y Splastic, empresas del grupo PlastIndustrial: inyección de plásticos técnicos para automoción, packaging y gran consumo desde 1969.",
+      "Moldiplast, Splastic y A. Madrona, empresas del grupo PlastIndustrial: inyección de plásticos técnicos, gran formato y fabricación en sala blanca.",
     url: "https://plastindustrial.com/empresas",
     siteName: "PlastIndustrial Group",
     locale: "es_ES",
@@ -27,15 +27,15 @@ export const metadata: Metadata = {
         url: "/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "Empresas del Grupo — Moldiplast y Splastic",
+        alt: "Empresas del Grupo — Moldiplast, Splastic y A. Madrona",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Empresas del Grupo | Moldiplast y Splastic",
+    title: "Empresas del Grupo | Moldiplast, Splastic y A. Madrona",
     description:
-      "Moldiplast y Splastic, empresas del grupo PlastIndustrial: inyección de plásticos técnicos para automoción, packaging y gran consumo desde 1969.",
+      "Moldiplast, Splastic y A. Madrona, empresas del grupo PlastIndustrial: inyección de plásticos técnicos, gran formato y fabricación en sala blanca.",
     images: ["/og-image.jpg"],
   },
 };
@@ -46,7 +46,7 @@ const jsonLd = {
   name: "Empresas — PlastIndustrial Group",
   url: "https://plastindustrial.com/empresas",
   description:
-    "Moldiplast y Splastic son las empresas del grupo PlastIndustrial, especialistas en inyección de plásticos técnicos para los sectores más exigentes.",
+    "Moldiplast, Splastic y A. Madrona son las empresas del grupo PlastIndustrial, especialistas en inyección de plásticos técnicos, gran formato y fabricación en sala blanca.",
   breadcrumb: {
     "@type": "BreadcrumbList",
     itemListElement: [
@@ -83,6 +83,14 @@ const jsonLd = {
         description:
           "Distribución de soluciones plásticas técnicas para la industria. Fundada en los años 70.",
       },
+      {
+        "@type": "ListItem",
+        position: 3,
+        name: "A. MADRONA",
+        url: "https://www.plasticos-madrona.com/",
+        description:
+          "Calidad y experiencia en inyección de plásticos. Más de 50 años especializados en la inyección de termoplásticos, elastómeros y PVC, con tecnología de última generación y una línea de producción en atmósfera controlada certificada ISO 6 para productos sanitarios.",
+      },
     ],
   },
 };
@@ -96,7 +104,7 @@ export default function EmpresasPage() {
       />
       <Header />
       <main className="pt-28">
-        <h1 className="sr-only">Nuestras Empresas: Moldiplast y Splastic</h1>
+        <h1 className="sr-only">Nuestras Empresas: Moldiplast, Splastic y A. Madrona</h1>
         <Companies />
       </main>
       <Footer />

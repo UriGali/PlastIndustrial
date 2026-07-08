@@ -13,7 +13,7 @@ import Footer from "./components/Footer";
 export const metadata: Metadata = {
   title: "Ingeniería del Plástico Industrial en Europa | PlastIndustrial Group",
   description:
-    "Holding líder en inyección de plásticos industriales en Europa. Moldiplast y Splastic: más de 50 años fabricando componentes técnicos en Barcelona.",
+    "Holding líder en inyección de plásticos industriales en Europa. Moldiplast, Splastic y A. Madrona: más de 50 años de experiencia técnica y fabricación en sala blanca.",
   alternates: {
     canonical: "https://plastindustrial.com",
     languages: {
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Ingeniería del Plástico Industrial en Europa | PlastIndustrial Group",
     description:
-      "Holding líder en inyección de plásticos industriales en Europa. Moldiplast y Splastic: más de 50 años fabricando componentes técnicos en Barcelona.",
+      "Holding líder en inyección de plásticos industriales en Europa. Moldiplast, Splastic y A. Madrona: más de 50 años de experiencia técnica y fabricación en sala blanca.",
     url: "https://plastindustrial.com",
     siteName: "PlastIndustrial Group",
     locale: "es_ES",
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Ingeniería del Plástico Industrial en Europa | PlastIndustrial Group",
     description:
-      "Holding líder en inyección de plásticos industriales en Europa. Moldiplast y Splastic: más de 50 años de experiencia técnica en Barcelona.",
+      "Holding líder en inyección de plásticos industriales en Europa. Moldiplast, Splastic y A. Madrona: más de 50 años de experiencia técnica y fabricación en sala blanca.",
     images: ["/og-image.jpg"],
   },
 };

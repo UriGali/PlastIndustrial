@@ -21,7 +21,7 @@ export const translations = {
       stats: [
         { n: "+50", u: "años de actividad" },
         { n: "+500", u: "clientes industriales" },
-        { n: "2", u: "empresas del grupo" },
+        { n: "3", u: "empresas del grupo" },
       ],
     },
     about: {
@@ -60,7 +60,7 @@ export const translations = {
     },
     companies: {
       eyebrow: "Nuestras Empresas",
-      headline1: "Dos empresas.",
+      headline1: "Tres empresas.",
       headline2: "Un estándar.",
       description:
         "Cada filial opera de forma independiente con su propia estructura comercial y operativa, pero comparte la plataforma de I+D, compras estratégicas y los valores de excelencia del grupo.",
@@ -77,6 +77,12 @@ export const translations = {
           description:
             "Centrada en la producción de piezas de gran formato, con equipos que abarcan desde 450 hasta 1.400 toneladas, lo que permite abordar proyectos de mayor volumen y exigencia estructural.",
           sectors: ["Automoción", "Cosmética", "Gran Consumo"],
+        },
+        {
+          tagline: "Calidad y experiencia en inyección de plásticos",
+          description:
+            "Más de 50 años especializados en la inyección de termoplásticos, elastómeros y PVC, con tecnología de última generación y una línea de producción en atmósfera controlada certificada ISO 6 para productos sanitarios.",
+          sectors: ["Material Hospitalario", "Sala Blanca ISO 6", "Plásticos Técnicos", "Microtolerancias"],
         },
       ],
     },
@@ -154,7 +160,7 @@ export const translations = {
       stats: [
         { n: "+50", u: "years of activity" },
         { n: "+500", u: "industrial clients" },
-        { n: "2", u: "group companies" },
+        { n: "3", u: "group companies" },
       ],
     },
     about: {
@@ -193,7 +199,7 @@ export const translations = {
     },
     companies: {
       eyebrow: "Our Companies",
-      headline1: "Two companies.",
+      headline1: "Three companies.",
       headline2: "One standard.",
       description:
         "Each subsidiary operates independently with its own commercial and operational structure, but shares the group's R&D platform, strategic purchasing and excellence values.",
@@ -210,6 +216,12 @@ export const translations = {
           description:
             "Focused on large-format part production, with equipment ranging from 450 to 1,400 tonnes, enabling larger volume and structural demand projects.",
           sectors: ["Automotive", "Cosmetics", "Mass Consumer"],
+        },
+        {
+          tagline: "Quality and experience in plastic injection moulding",
+          description:
+            "More than 50 years specialized in the injection of thermoplastics, elastomers and PVC, with state-of-the-art technology and a certified ISO 6 controlled-atmosphere production line for medical products.",
+          sectors: ["Hospital Materials", "ISO 6 Cleanroom", "Technical Plastics", "Micro-tolerances"],
         },
       ],
     },
@@ -287,7 +299,7 @@ export const translations = {
       stats: [
         { n: "+50", u: "anys d'activitat" },
         { n: "+500", u: "clients industrials" },
-        { n: "2", u: "empreses del grup" },
+        { n: "3", u: "empreses del grup" },
       ],
     },
     about: {
@@ -326,7 +338,7 @@ export const translations = {
     },
     companies: {
       eyebrow: "Les Nostres Empreses",
-      headline1: "Dues empreses.",
+      headline1: "Tres empreses.",
       headline2: "Un estàndard.",
       description:
         "Cada filial opera de forma independent amb la seva pròpia estructura comercial i operativa, però comparteix la plataforma de R+D, compres estratègiques i els valors d'excel·lència del grup.",
@@ -343,6 +355,12 @@ export const translations = {
           description:
             "Centrada en la producció de peces de gran format, amb equips que abasten des de 450 fins a 1.400 tones, la qual cosa permet abordar projectes de major volum i exigència estructural.",
           sectors: ["Automoció", "Cosmètica", "Gran Consum"],
+        },
+        {
+          tagline: "Qualitat i experiència en injecció de plàstics",
+          description:
+            "Més de 50 anys especialitzats en la injecció de termoplàstics, elastòmers i PVC, amb tecnologia d'última generació i una línia de producció en atmosfera controlada certificada ISO 6 per a productes sanitaris.",
+          sectors: ["Material Hospitalari", "Sala Blanca ISO 6", "Plàstics Tècnics", "Microtoleràncies"],
         },
       ],
     },

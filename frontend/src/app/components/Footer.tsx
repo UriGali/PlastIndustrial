@@ -37,6 +37,7 @@ export default function Footer() {
               {[
                 { label: "Moldiplast, S.L.", href: "https://www.moldiplast.com/" },
                 { label: "Splastic, S.L.U.", href: "https://splastic.es/" },
+                { label: "A. Madrona, S.L.", href: "https://www.plasticos-madrona.com/" },
               ].map((l) => (
                 <li key={l.label}>
                   <a

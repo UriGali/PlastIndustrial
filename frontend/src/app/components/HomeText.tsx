@@ -19,12 +19,14 @@ export default function HomeText() {
             <p>
               PlastIndustrial Group es un grupo empresarial especializado en la ingeniería y
               distribución de soluciones plásticas industriales, con sede en Sant Quirze del Vallès,
-              en el área metropolitana de Barcelona. A través de sus dos filiales —{" "}
-              <strong className="text-gray-700">Moldiplast</strong> y{" "}
-              <strong className="text-gray-700">Splastic</strong> — el grupo ofrece una propuesta
+              en el área metropolitana de Barcelona. A través de sus tres filiales —{" "}
+              <strong className="text-gray-700">Moldiplast</strong>,{" "}
+              <strong className="text-gray-700">Splastic</strong> y{" "}
+              <strong className="text-gray-700">A. Madrona</strong> — el grupo ofrece una propuesta
               de valor única: capacidad total para abordar cualquier proyecto de inyección de
               plásticos técnicos, desde el componente de microtolerancias hasta la pieza estructural
-              de gran formato.
+              de gran formato, y ahora también disponemos de una línea de fabricación de material
+              hospitalario en atmósfera controlada, homologación ISO 6.
             </p>
             <p>
               Con un parque de maquinaria que abarca desde 60 hasta 1.400 toneladas de capacidad

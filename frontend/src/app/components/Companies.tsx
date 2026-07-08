@@ -5,6 +5,7 @@ import { useLanguage } from "../contexts/LanguageContext";
 const COMPANY_META = [
   { index: "01", name: "Moldiplast, S.L.", since: "Est. 1969", href: "https://www.moldiplast.com/" },
   { index: "02", name: "Splastic, S.L.U.", since: "Est. 1970s", href: "https://splastic.es/" },
+  { index: "03", name: "A. MADRONA", since: "Est. 2017", href: "https://www.plasticos-madrona.com/" },
 ];
 
 export default function Companies() {

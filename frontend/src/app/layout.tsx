@@ -22,6 +22,10 @@ export const metadata: Metadata = {
     "PlastIndustrial Group",
     "Moldiplast",
     "Splastic",
+    "A. Madrona",
+    "A. MADRONA",
+    "sala blanca",
+    "material hospitalario",
     "soluciones industriales",
     "manufactura",
     "componentes plásticos",
@@ -84,7 +88,7 @@ const jsonLd = {
     addressRegion: "Barcelona",
     addressCountry: "ES",
   },
-  sameAs: ["https://www.moldiplast.com", "https://splastic.es"],
+  sameAs: ["https://www.moldiplast.com", "https://splastic.es", "https://www.plasticos-madrona.com/"],
   subOrganization: [
     {
       "@type": "Organization",
@@ -95,6 +99,11 @@ const jsonLd = {
       "@type": "Organization",
       name: "Splastic, S.L.U.",
       url: "https://splastic.es/",
+    },
+    {
+      "@type": "Organization",
+      name: "A. MADRONA",
+      url: "https://www.plasticos-madrona.com/",
     },
   ],
 };

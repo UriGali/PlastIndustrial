@@ -42,14 +42,21 @@ export default function GroupText() {
               automoción pesada, la cosmética industrial y el gran consumo, donde la capacidad de
               producir series largas con coste eficiente es determinante.
             </p>
+            <p>
+              En <strong className="text-gray-700">2017</strong>, se incorporó al grupo{" "}
+              <strong className="text-gray-700">A. Madrona</strong>, aportando una avanzada línea
+              de fabricación de material hospitalario en atmósfera controlada con homologación ISO 6,
+              y completando la capacidad tecnológica del holding desde los componentes de microtolerancias
+              hasta las piezas estructurales de gran formato.
+            </p>
           </div>
 
           <div className="space-y-5">
             <p>
-              La integración de ambas empresas bajo{" "}
+              La integración de las empresas bajo{" "}
               <strong className="text-gray-700">PlastIndustrial Group</strong> respondió a una
-              convicción estratégica clara: la suma de Moldiplast y Splastic generaba una propuesta
-              de valor superior a la de cada empresa por separado. Juntas, las dos filiales cubren
+              convicción estratégica clara: la suma de Moldiplast, Splastic y A. Madrona genera una propuesta
+              de valor superior a la de cada empresa por separado. Juntas, las filiales cubren
               la totalidad del espectro de la inyección de plásticos industriales, sin dejar ningún
               proyecto fuera de su alcance productivo o técnico.
             </p>
