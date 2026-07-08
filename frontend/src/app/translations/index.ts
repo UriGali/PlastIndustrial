@@ -97,7 +97,7 @@ export const translations = {
     },
     team: {
       eyebrow: "Equipo",
-      headline1: "Tres perfiles.",
+      headline1: "Cuatro perfiles.",
       headline2: "Un propósito.",
       description:
         "Esta estructura de liderazgo nos permite combinar visión estratégica, conocimiento técnico y capacidad industrial, garantizando un servicio sólido, ágil y orientado al cliente.",
@@ -105,6 +105,7 @@ export const translations = {
         { desc: "Lidera el grupo, coordinando la estrategia global y el desarrollo corporativo." },
         { desc: "Al frente de Moldiplast, impulsando la especialización en piezas técnicas y de alta precisión." },
         { desc: "Dirige Splastic, centrado en la producción de piezas de gran formato y alta capacidad productiva." },
+        { desc: "Dirige las operaciones de A. Madrona, controlando todos los procesos y asegurando el cumplimiento de las certificaciones para materiales hospitalarios." },
       ],
     },
     contact: {
@@ -236,7 +237,7 @@ export const translations = {
     },
     team: {
       eyebrow: "Team",
-      headline1: "Three profiles.",
+      headline1: "Four profiles.",
       headline2: "One purpose.",
       description:
         "This leadership structure allows us to combine strategic vision, technical knowledge and industrial capacity, ensuring a solid, agile and client-oriented service.",
@@ -244,6 +245,7 @@ export const translations = {
         { desc: "Leads the group, coordinating global strategy and corporate development." },
         { desc: "At the helm of Moldiplast, driving specialization in technical and high-precision parts." },
         { desc: "Directs Splastic, focused on large-format part production and high production capacity." },
+        { desc: "Directs operations at A. Madrona, controlling all processes and ensuring compliance with certifications for hospital materials." },
       ],
     },
     contact: {
@@ -375,7 +377,7 @@ export const translations = {
     },
     team: {
       eyebrow: "Equip",
-      headline1: "Tres perfils.",
+      headline1: "Quatre perfils.",
       headline2: "Un propòsit.",
       description:
         "Aquesta estructura de lideratge ens permet combinar visió estratègica, coneixement tècnic i capacitat industrial, garantint un servei sòlid, àgil i orientat al client.",
@@ -383,6 +385,7 @@ export const translations = {
         { desc: "Lidera el grup, coordinant l'estratègia global i el desenvolupament corporatiu." },
         { desc: "Al capdavant de Moldiplast, impulsant l'especialització en peces tècniques i d'alta precisió." },
         { desc: "Dirigeix Splastic, centrat en la producció de peces de gran format i alta capacitat productiva." },
+        { desc: "Dirigeix les operacions d'A. Madrona, controlant tots els processos i assegurant el compliment de les certificacions per a materials hospitalaris." },
       ],
     },
     contact: {
