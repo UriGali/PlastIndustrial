@@ -8,7 +8,13 @@
       "Bash(cp \"C:/Users/uriga/OneDrive/Escritorio/AGENCIA_RECORDS/MIS_PROYECTOS/PlastIndustrial/extracted_tmp/plastindustrial-logos/plastindustrial.svg\" \"C:/Users/uriga/OneDrive/Escritorio/AGENCIA_RECORDS/MIS_PROYECTOS/PlastIndustrial/frontend/public/plastindustrial.svg\")",
       "Bash(cp \"C:/Users/uriga/OneDrive/Escritorio/AGENCIA_RECORDS/MIS_PROYECTOS/PlastIndustrial/extracted_tmp/plastindustrial-logos/plastindustrial-neg.png\" \"C:/Users/uriga/OneDrive/Escritorio/AGENCIA_RECORDS/MIS_PROYECTOS/PlastIndustrial/frontend/public/plastindustrial-neg.png\")",
       "WebFetch(domain:www.moldiplast.com)",
-      "WebFetch(domain:splastic.es)"
+      "WebFetch(domain:splastic.es)",
+      "Bash(grep -E '\\\\.\\(js|json|html|css\\)$')",
+      "Bash(grep -E '\\\\.\\(js|json|html|css|jsx|tsx|ts\\)$')",
+      "Bash(npx tsc *)",
+      "Bash(npx next *)",
+      "Bash(npm run *)",
+      "Bash(grep -E \"\\\\.\\(tsx|ts\\)$\")"
     ]
   }
 }
